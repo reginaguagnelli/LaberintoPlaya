@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplayer Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyD29uVKU6xIQaW4Y0PSF3qx3a3pKbPzeVI",
+  authDomain: "laberintoplaya.firebaseapp.com",
+  databaseURL: "https://laberintoplaya-default-rtdb.firebaseio.com",
+  projectId: "laberintoplaya",
+  storageBucket: "laberintoplaya.appspot.com",
+  messagingSenderId: "722533839470",
+  appId: "1:722533839470:web:5d69a9e3117700cee22c7f"
+};
+
+// Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="Players.js"></script>
+    <script src="Form.js"></script>
+    <script src="Game.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+  </body>
+</html>
