@@ -13,4 +13,5 @@ class Form{
         this.input.position(displayWidth/2-80, displayHeight/2-80)
         this.button.position(displayWidth/2-10, displayHeight/2-50)
     }
+    
 }
