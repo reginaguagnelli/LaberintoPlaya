@@ -10,13 +10,15 @@ var database, playercount;
 
 var form, game;
 
-var players;
+var player, players;
+
+var allPlayers;
 
 var playaImg;
 var playerImg1, playerImg2, playerImg3, playerImg4;
 
 function preload(){
-
+playaImg=loadImage("playa.jpg")
 }
 
 function setup(){
@@ -32,5 +34,8 @@ function setup(){
 function draw(){
   if(playercount === 4){
     game.update(1);
+  }
+  if(gamestate===1){
+    game.play();
   }
 }

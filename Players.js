@@ -1,17 +1,17 @@
-class Player{
+class Players{
     constructor(){
         this.name=null;
         this.index=null;
     }
     getCount(){
-        var playerCountRef=database.ref('playerCount');
+        var playerCountRef=database.ref('playercount');
         playerCountRef.on('value', (data)=>{
-            playerCount=data.val();
+            playercount=data.val();
         })
     }
     updateCount(count){
         database.ref('/').update({
-            playerCount:count
+            playercount:count
         })
         ;
     }
